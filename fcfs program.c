@@ -9,7 +9,7 @@ int main()
     for(i=0;i<n;i++)
     {
         printf("Enter the Process name,Arrival time and Burst time:");
-        scanf("%s%d%d",&pn[i],&arr[i],&bur[i]);
+        scanf("%zs%d%d",&pn[i],&arr[i],&bur[i]);
     }
     for(i=0;i<n;i++)
     {
@@ -36,6 +36,6 @@ int main()
         totwt+=wt[i];
         tottat+=tat[i];
     }
-    printf("\nAverage Waiting time:%f",(float)totwt);
-    printf("\nAverage Waiting time:%f",(float)tottat);
+    printf("\nAverage Waiting time:%f",(float)totwt/n);
+    printf("\nAverage Waiting time:%f",(float)tottat/n);
 }
