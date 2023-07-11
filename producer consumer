@@ -1,5 +1,5 @@
-#include&lt;stdio.h&gt;
-#include&lt;stdlib.h&gt;
+#include<stdio.h>
+#include<stdlib.h>
 int mutex=1,full=0,empty=3,x=0;
 int main()
 {
