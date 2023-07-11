@@ -41,19 +41,20 @@ int main()
 }
 
 OUTPUT
-please enter number of process: 4
-
- enter the Burst Time:
-p1:5
-p2:4
-p3:2
-p4:1
-
-Process     Burst Time          Waiting Time    Turnaround Time
-p4                1                 0                   1
-p3                2                 1                   3
-p2                4                 3                   7
-p1                5                 7                   12
-
- the average Waiting Time=2.750000
-  the average Turnaround Time=5.750000*/
+Enter the number of processes: 4
+Enter the arrival time for process 1:0
+Enter the Burst time for processes 1:5
+Enter the arrival time for process 2:1
+Enter the Burst time for processes 2:3
+Enter the arrival time for process 3:2
+Enter the Burst time for processes 3:4
+Enter the arrival time for process 4:4
+Enter the Burst time for processes 4:1
+FCFS agorithm
+Processes       AT      BT      WT      TAT     CT      RT
+1               0       5       0       5       5       0
+2               1       3       4       7       8       4
+3               2       4       6       10      12      6
+4               4       1       8       9       13      8
+AVG waiting time: 4.500000
+AVG turnaround time: 7.750000*/
