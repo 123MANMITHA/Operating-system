@@ -1,33 +1,5 @@
 #include<stdio.h>
 void main(){
-    /*output:
-    Enter the number of resources : 3
-
-    enter the max instances of each resources
-    a= 10
-    b= 5
-    c= 7
-
-    Enter the number of processes : 5
-
-    Enter the allocation matrix 
-          a b c
-    P[0]  0 1 0
-    P[1]  2 0 0
-    P[2]  3 0 2
-    P[3]  2 1 1
-    P[4]  0 0 2
-
-    Enter the max matrix 
-          a b c
-    P[0]  7 5 3
-    P[1]  3 2 2
-    P[2]  9 0 2
-    P[3]  2 2 2
-    P[4]  4 3 3
-
-        < P[1]  P[3]  P[4]  P[0]  P[2] >
-    */
     int k=0,output[10],d=0,t=0,ins[5],i,avail[5],allocated[10][5],need[10][5],max[10][5],pno,j,rz,P[10],count=0;
     printf("\n Enter the number of resources : ");
     scanf("%d",&rz);
@@ -84,6 +56,39 @@ void main(){
         pno=d+1;
         goto A;
     }
+
+
+
+
+    
+    /*output:
+    Enter the number of resources : 3
+
+    enter the max instances of each resources
+    a= 10
+    b= 5
+    c= 7
+
+    Enter the number of processes : 5
+
+    Enter the allocation matrix 
+          a b c
+    P[0]  0 1 0
+    P[1]  2 0 0
+    P[2]  3 0 2
+    P[3]  2 1 1
+    P[4]  0 0 2
+
+    Enter the max matrix 
+          a b c
+    P[0]  7 5 3
+    P[1]  3 2 2
+    P[2]  9 0 2
+    P[3]  2 2 2
+    P[4]  4 3 3
+
+        < P[1]  P[3]  P[4]  P[0]  P[2] >
+    */
     printf("\t <");
     for(i=0;i<k;i++)
         printf(" P[%d] ",output[i]);
