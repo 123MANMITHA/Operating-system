@@ -56,11 +56,13 @@ void main(){
         pno=d+1;
         goto A;
     }
+    printf("\t <");
+    for(i=0;i<k;i++)
+        printf(" P[%d] ",output[i]);
+    printf(">\n");
+}
 
 
-
-
-    
     /*output:
     Enter the number of resources : 3
 
@@ -89,8 +91,3 @@ void main(){
 
         < P[1]  P[3]  P[4]  P[0]  P[2] >
     */
-    printf("\t <");
-    for(i=0;i<k;i++)
-        printf(" P[%d] ",output[i]);
-    printf(">\n");
-}
