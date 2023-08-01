@@ -20,3 +20,18 @@ int main()
     printf("\nTotal head Moment is %d",TotalHeadMoment);
     return 0;
 }
+//Enter the number of Requests
+//7
+//Enter the Request sequence
+//82
+//170
+//43
+//140
+//24
+//16
+//190
+//Enter the initial head position
+//50
+//Sequence of request access:
+//82170431402416190
+//Total head Moment is 642
